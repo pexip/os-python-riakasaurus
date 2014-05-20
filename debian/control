@@ -1,8 +1,9 @@
 Source: python-riakasaurus
 Section: net
 Priority: optional
-Maintainer: Colin Alston <colin.alston@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), python-support, python-setuptools
+XSBC-Pexip-Original-Maintainer: Colin Alston <colin.alston@gmail.com>
+Maintainer: Pexip AS <packaging@pexip.com>
+Build-Depends: debhelper (>= 7.0.50~), python-support, python-setuptools, protobuf-compiler, python-protobuf
 Standards-Version: 3.9.1
 
 Package: python-riakasaurus

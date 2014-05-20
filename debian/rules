@@ -5,3 +5,11 @@
 override_dh_clean:
 	dh_clean
 	rm -rf *.egg-info
+	find . | grep '\.pyc$$' | xargs rm -f
+	find . | grep '~$$' | xargs rm -f
+#	find . | grep '_pb2.py$$' | xargs rm -f
+
+#override_dh_auto_build:
+#	protoc -Iprotobuf --python_out=riakasaurus protobuf/riak.proto
+#	protoc -Iprotobuf --python_out=riakasaurus protobuf/riak_kv.proto
+#	dh_auto_build
