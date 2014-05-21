@@ -1,3 +1,9 @@
+python-riakasaurus (1.1.1-1~20140521+fbd364ff) pexip; urgency=low
+
+  * Fix depends to depend properly on python-protobuf
+
+ -- Ben Hockley <ben@pexip.com>  Wed, 21 May 2014 15:47:33 +0100
+
 python-riakasaurus (1.1.1-1~20140519+fbd364ff) pexip; urgency=low
 
   * Prepare pexip packaging

@@ -11,5 +11,6 @@ Architecture: all
 Depends: ${python:Depends},
     ${misc:Depends},
     python-twisted,
+    python-protobuf,
 Description: Twisted Riak client
  Twisted Riak client
