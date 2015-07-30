@@ -1,3 +1,9 @@
+python-riakasaurus (1.1.1-1~20150730+fbd364ff) pexip; urgency=low
+
+  * Ensure 2i keys are URI quoted for http transport
+
+ -- Eoin McLeod <eoin@pexip.com>  Thu, 30 Jul 2015 17:45:00 +0100
+
 python-riakasaurus (1.1.1-1~20140521+fbd364ff) pexip; urgency=low
 
   * Fix depends to depend properly on python-protobuf

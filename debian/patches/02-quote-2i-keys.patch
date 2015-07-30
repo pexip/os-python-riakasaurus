@@ -1,0 +1,10 @@
+--- a/riakasaurus/transport/http_transport.py
++++ b/riakasaurus/transport/http_transport.py
+@@ -556,6 +556,7 @@ class HTTPTransport(transport.FeatureDetection):
+         segments = ["buckets", bucket, "index", index, str(startkey)]
+         if endkey:
+             segments.append(str(endkey))
++        segments = [urllib.quote_plus(segment) for segment in segments]
+         uri = '/%s' % ('/'.join(segments))
+         headers, data = response = yield self.get_request(uri)
+         self.check_http_code(response, [200])
